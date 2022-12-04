@@ -86,7 +86,7 @@ font-size: 30px;
 
 
 
-@media(max-width:375px){
+@media(max-width:600px){
 
     body{
         overflow: hidden;
@@ -99,7 +99,7 @@ font-size: 30px;
     
     
     h1,h2{
-        font-size: 10px;
+        font-size: 30px;
       
        
         margin: 10px;
@@ -148,149 +148,25 @@ font-size: 30px;
         content: '';
         display: block;
         width: 200px;
-        height: 100px;
-        background: url(../img/Tanah.png) bottom center no-repeat;
-        background-size: 60%;
-        position: absolute;
-        bottom: -20px;
-    }
-}
-@media(max-width:420px){
-
-    body{
-        overflow: hidden;
-    }
-    .title{
-        display: flex;
-        text-align:center;
-        justify-content: center;
-    }
-    
-    
-    h1,h2{
-        font-size: 60px;
-      
-       
-        margin: 10px;
-    }
-    
-    
-    
-    .container:active{
-       cursor: url(../img/palu1.png),auto;
-    
-    }
-    
-    button{
-        display: block;
-        margin: auto;
-        margin-top: 20px;
-        background-color: aliceblue;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-family: 'Amatic SC', cursive;
-    font-size: 30px;
-        border-radius: 10px;
-    }
-    .score{
-        background: rgba(255,255,255,0.2);
-        padding: 0 1rem;
-        line-height: 1;
-        border-radius: 1rem;
-    }
-    .container{
-        width: 400px;
-        margin: auto;
-     
-    }
-
-    .tanah{
-        width: 150px;
-        height: 100px;
-        position: relative;
-        overflow: hidden;
-        float: left;
-    }
-    
-    .tanah::after{
-        content: '';
-        display: block;
-        width: 200px;
-        height: 100px;
-        background: url(../img/Tanah.png) bottom center no-repeat;
-        background-size: 60%;
-        position: absolute;
-        bottom: -20px;
-    }
-}
-
-@media(max-width:768px){
-
-    body{
-        overflow: hidden;
-    }
-    .title{
-        display: flex;
-        text-align:center;
-        justify-content: center;
-    }
-    
-    
-    h1,h2{
-        font-size: 60px;
-      
-       
-        margin: 10px;
-    }
-    
-    
-    
-    .container:active{
-       cursor: url(../img/palu1.png),auto;
-    
-    }
-    
-    button{
-        display: block;
-        margin: auto;
-        margin-top: 20px;
-        background-color: aliceblue;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-family: 'Amatic SC', cursive;
-    font-size: 30px;
-        border-radius: 10px;
-    }
-    .score{
-        background: rgba(255,255,255,0.2);
-        padding: 0 1rem;
-        line-height: 1;
-        border-radius: 1rem;
-    }
-    .container{
-        width: 500px;
-        margin: auto;
-     
-    }
-
-    .tanah{
-        width: 150px;
         height: 140px;
-        position: relative;
-        overflow: hidden;
-        float: left;
-    }
-    
-    .tanah::after{
-        content: '';
-        display: block;
-        width: 200px;
-        height: 100px;
         background: url(../img/Tanah.png) bottom center no-repeat;
         background-size: 60%;
         position: absolute;
         bottom: -20px;
     }
+    .tikus{
+        width: 100%;
+        height: 100%;
+        background:url(../img/hitler.png)bottom center no-repeat;
+        background-size: 60%;
+        position: absolute;
+        top: 1120px;
+        left: 20px;
+        transition: top 0.3s;
+    }
+    .tanah.muncul .tikus {
+        top: -10px;
+    }
+    
+    
 }
