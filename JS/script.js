@@ -1,3 +1,6 @@
+Swal.fire('Hai, selamat datang \n di minigame kedua ku, jangan lupa baca Syratnya 🤗 \n Enjoy!!!')
+
+
 const tanah = document.querySelectorAll('.tanah')
 const tikus = document.querySelectorAll('.tikus')
 const score = document.querySelector('.score')
